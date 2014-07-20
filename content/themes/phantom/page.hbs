@@ -1,0 +1,62 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+        {{! Navigation for Small Screen }}
+
+        <div class="back-to-home">
+            <a href="{{@blog.url}}"><i class="fa fa-long-arrow-left fa-2x"></i><h5>{{@blog.title}}</h5></a>
+            
+        </div> <!-- Small Screen Navigation End -->
+
+    <div class='post-fixed-nav'>
+    	{{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
+        <hr>
+        <div class="post-sidebar">
+
+            {{! Page Sidebar Content // Replace with your code }}
+
+            <h5>Page Sidebar?</h5>
+            <p>Place your content on page.hbs file. <br> See documentation for further help.</p>
+
+        </div>
+
+        {{! Social Menu }}
+       <div class="footer-social-menu">
+        <div class="footer-social-icons">
+            <a href="http://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="http://www.twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://plus.google.com"><i class="fa fa-google-plus fa-2x"></i></a>
+            <a href="{{@blog.url}}/rss"><i class="fa fa-rss fa-2x"></i></a>
+        </div> 
+    </div>
+
+    </div>
+
+
+    {{! Each post will be output using this markup }}
+
+    <div class='post-holder'>    
+            
+        {{! Everything inside the #post tags pulls data from the post }}
+
+        <article class="{{post_class}}">  
+        {{#post}}
+              
+            <h1 class="page-title">{{{title}}}</h1>
+            
+            <section class="post-content">
+                {{content}}
+            </section>
+
+            {{/post}}
+    
+        </article>   
+
+    </div>
+</main>
