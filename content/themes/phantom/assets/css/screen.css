@@ -496,6 +496,8 @@ margin on the iframe, cause it breaks stuff. */
     background-color: #343434;
     background-size: 100%;
     background-attachment: fixed;
+    /* JASEN ADDED BELOW*/
+    background: no-repeat center center fixed;
 }
 
 #site-head:after {
@@ -1163,6 +1165,8 @@ a.fn-item.active {
         min-height: 240px;
         height: 100%;
         margin-bottom: 0rem;
+        /* JASEN ADDED BELOW*/
+        background: no-repeat center center fixed;
     }
 
     .back-to-home {
@@ -1244,6 +1248,8 @@ a.fn-item.active {
     #site-head {
         height: 100%;
         background-size: auto;
+        /* JASEN ADDED BELOW*/
+        background: no-repeat center center fixed;
     }
 
     .back-to-home {
@@ -1338,6 +1344,8 @@ a.fn-item.active {
         height: 100%;
         background-size: auto;
         background-position: center;
+        /* JASEN ADDED BELOW*/
+        background: no-repeat center center fixed;
     }
 
 
@@ -1482,6 +1490,8 @@ a.fn-item.active {
         height: 100%;
         background-size: auto;
         background-position: center;
+        /* JASEN ADDED BELOW*/
+        background: no-repeat center center fixed;
     }
 
 
