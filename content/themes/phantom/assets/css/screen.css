@@ -815,6 +815,7 @@ a.fn-item.active {
 
 .excerpt-image {
     max-height: 180px;
+    max-width: 180px;
     padding: 5px auto;
     overflow: hidden;
 }
