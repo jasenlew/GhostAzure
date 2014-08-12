@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+coffeescript+scss+bash+sql&plugins=line-highlight+line-numbers+show-language */
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+java+scss+bash+c+sql+http+ruby+swift+objectivec+autohotkey&plugins=line-highlight+line-numbers */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -8,13 +8,14 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
-	text-shadow: 0 1px rgba(0,0,0,0.3);
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
+	line-height: 1.5;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -68,7 +69,7 @@ pre[class*="language-"] {
 }
 
 .token.boolean,
-.token.number{
+.token.number {
 	color: #ae81ff;
 }
 
@@ -78,7 +79,6 @@ pre[class*="language-"] {
 .token.builtin {
 	color: #a6e22e;
 }
-
 
 .token.operator,
 .token.entity,
@@ -90,14 +90,12 @@ pre[class*="language-"] {
 }
 
 .token.atrule,
-.token.attr-value
-{
+.token.attr-value {
 	color: #e6db74;
 }
 
-
-.token.keyword{
-color: #66d9ef;
+.token.keyword {
+	color: #66d9ef;
 }
 
 .token.regex,
@@ -200,24 +198,3 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-pre[class*='language-'] {
-	position: relative;
-}
-pre[class*='language-'] > code[data-language] {
-	overflow: scroll;
-	max-height: 28em;
-	display: block;
-}
-pre[class*='language-'] > code[data-language]::before {
-	content: attr(data-language);
-	color: black;
-	background-color: #CFCFCF;
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 0.9em;
-	border-radius: 0 0 0 5px;
-	padding: 0 0.5em;
-	text-shadow: none;
-}
